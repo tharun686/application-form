@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Application Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #8db3c7; /* Light blue background similar to image */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    .form-container {
+        background: #5a7890; /* Darker bluish panel similar to screenshot */
+        padding: 30px 40px;
+        border-radius: 10px;
+        color: white;
+        width: 550px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+
+    label {
+        display: block;
+        margin: 12px 0 5px;
+    }
+
+    input[type=text], input[type=email], input[type=date], input[type=number], input[type=password] {
+        width: 100%;
+        padding: 8px;
+        border-radius: 5px;
+        border: none;
+        margin-bottom: 10px;
+    }
+
+    .row {
+        display: flex;
+        gap: 10px;
+    }
+
+    .row div {
+        flex: 1;
+    }
+
+    .checkbox-group, .radio-group {
+        margin: 5px 0 15px;
+    }
+
+    .submit-btn {
+        width: 100%;
+        padding: 10px;
+        background: #e87d6d;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-top: 15px;
+        cursor: pointer;
+    }
+
+    .submit-btn:hover {
+        background: #d26857;
+    }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Application Form</h1>
+
+    <div class="row">
+        <div>
+            <label>First Name:</label>
+            <input type="text">
+        </div> <br>
+        <div>
+            <label>Last Name:</label>
+            <input type="text">
+        </div> <br>
+    </div>
+
+    <div class="row">
+        <div>
+            <label>Date of Birth:</label>
+            <input type="date">
+        </div> <br>
+        <div>
+            <label>Age:</label>
+            <input type="number">
+        </div><br>
+    </div>
+
+    <div class="row">
+        <div>
+            <label>Gender:</label>
+            <input type="text">
+        </div><br>
+        <div>
+            <label>Email Address:</label>
+            <input type="email">
+        </div> <br>
+    </div>
+
+    <label>Positions Available:</label>
+    <div class="checkbox-group">
+        <label><input type="checkbox"> Junior Developer</label>
+        <label><input type="checkbox"> Mid-level Developer</label>
+        <label><input type="checkbox"> Senior Developer</label>
+   <label>Programming Languages:</label>
+</div>
+    <div class="checkbox-group">
+        <label><input type="checkbox"> Java</label>
+        <label><input type="checkbox"> JavaScript</label>
+        <label><input type="checkbox"> Python</label>
+    <div class="row">
+        <div>
+            <label>Password:</label>
+            <input type="password">
+        </div><br>
+        <div>
+            <label>Confirm Password:</label>
+            <input type="password">
+        </div><br>
+    </div>
+
+    <button class="submit-btn">Submit</button>
+</div>
+
+</body>
+</html>
+
