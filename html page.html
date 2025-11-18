@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+
+    <style>
+        body {
+            background-color: #1e90ff; /* Blue background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background: #ffffff;
+            width: 40%;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 20px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            background-color: #1e90ff;
+            padding: 12px;
+            border: none;
+            font-size: 16px;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d6efd;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Application Form</h2>
+
+        <form action="#" method="post">
+            <label>Full Name</label>
+            <input type="text" name="fullname" required>
+
+            <label>Email</label>
+            <input type="email" name="email" required>
+
+            <label>Phone Number</label>
+            <input type="text" name="phone" required>
+
+            <label>Address</label>
+            <textarea name="address" rows="3" required></textarea>
+
+            <label>Position Applying For</label>
+            <select name="position" required>
+                <option value="">Select</option>
+                <option value="manager">Manager</option>
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+            </select>
+
+            <label>Upload Resume</label>
+            <input type="file" name="resume" required>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+</body>
+</html>
